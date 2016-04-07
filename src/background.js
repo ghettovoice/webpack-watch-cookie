@@ -1,7 +1,7 @@
 /**
  * Simple Webpack watch cookie extension
  */
-// todo офрмить все круто
+// todo добавить страницу насторек и там указывать имя куки
 const COOKIE_NAME = 'webpack_watch';
 const ACTIVE_ICON = 'assets/img/webpack.png';
 const INACTIVE_ICON = 'assets/img/webpack_2.png';
