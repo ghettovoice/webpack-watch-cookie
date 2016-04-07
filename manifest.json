@@ -1,0 +1,32 @@
+{
+    "name": "Webpack Watch Cookie setup extension",
+    "version": "1.0.0",
+    "author": "Vladimir Vershinin <ghettovoice@gmail.com>",
+    "homepage_url": "http://homepage",
+    "short_name": "WebpackWatchCookie",
+    "minimum_chrome_version": "45",
+    "manifest_version": 2,
+
+    "icons": {
+        "16": "assets/img/webpack.png",
+        "48": "assets/img/webpack.png",
+        "128": "assets/img/webpack.png"
+    },
+
+    "browser_action": {
+        "default_title": "Set Webpack cookie",
+        "default_icon": "assets/img/webpack_2.png"
+    },
+
+    "permissions": [
+        "tabs",
+        "cookies",
+        "*://*/*"
+    ],
+
+    "background": {
+        "scripts": [
+            "src/background.js"
+        ]
+    }
+}
