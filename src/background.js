@@ -17,7 +17,7 @@ class App {
     }
 
     getCookie(url, callback)
-    {
+    {   
         chrome.cookies.get({
             url: url,
             name: this.cookieName
@@ -101,6 +101,8 @@ function invoke(fn, ...args)
 }
 
 var app = new App();
+
+chrome.tabs.getCurrent(tab => tab && this.updateIcon(tab));
 
 chrome.tabs.onActivated.addListener((evt) => {
     chrome.tabs.get(evt.tabId, (tab) => {
